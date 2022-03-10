@@ -18,3 +18,21 @@ body{
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.custom-divider {
+    @apply text-gray-600 text-center relative
+}
+.custom-divider:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #D1D5DB;
+ }
+
+.mt--1{
+    margin-top: -0.25rem;
+}
