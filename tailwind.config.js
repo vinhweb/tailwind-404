@@ -4,7 +4,11 @@ module.exports = {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '92': '23rem',
+      }
+    },
   },
   plugins: [
     require('flowbite/plugin')
