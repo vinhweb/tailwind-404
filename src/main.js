@@ -1,20 +1,30 @@
-const listItems = document.querySelectorAll('#faq_list li');
+class Main{
+    constructor() {
+        this.faqInit();
+    }
 
-listItems.forEach(item => {
-    const plusBtn = item.querySelector('button .plus');
-    const minusBtn = item.querySelector('button .minus');
+    faqInit(){
+        const listItems = document.querySelectorAll('#faq_list li');
 
-    plusBtn.addEventListener('click', function(){
-        removeClassFAQ();
-        item.classList.add('active');
-    })
+        listItems.forEach(item => {
+            const plusBtn = item.querySelector('button .plus');
+            const minusBtn = item.querySelector('button .minus');
 
-    minusBtn.addEventListener('click', function(){
-        removeClassFAQ();
-    })
-})
+            plusBtn.addEventListener('click', function(){
+                removeClassFAQ();
+                item.classList.add('active');
+            })
 
-function removeClassFAQ(){
-    const listActiveItems = document.querySelectorAll('#faq_list li.active');
-    listActiveItems.forEach(item => item.classList.remove('active'));
+            minusBtn.addEventListener('click', function(){
+                removeClassFAQ();
+            })
+        })
+
+        function removeClassFAQ(){
+            const listActiveItems = document.querySelectorAll('#faq_list li.active');
+            listActiveItems.forEach(item => item.classList.remove('active'));
+        }
+    }
 }
+
+new Main();
