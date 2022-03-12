@@ -36,3 +36,24 @@ body{
 .mt--1{
     margin-top: -0.25rem;
 }
+
+#faq_list li .minus,
+#faq_list li .answer{
+    display: none;
+}
+
+#faq_list li.active .minus,
+#faq_list li.active .answer{
+    display: block;
+}
+
+#faq_list li.active .plus{
+    display: none;
+}
+#faq_list li .plus{
+    display: block;
+}
+
+#faq_list{
+    max-width: 750px;
+}

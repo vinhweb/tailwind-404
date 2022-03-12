@@ -44,89 +44,47 @@
 </nav>
 
 
-<main>
-  <section class="px-2 sm:px-4 py-10 lg:py-16">
-    <div class="container mx-auto">
-      <!--Head-->
-      <div class="mb-16 grid gap-4 text-center">
-        <p class="text-sm text-indigo-800">FAQs</p>
-        <h2 class="font-semibold text-3xl md:text-4xl">Frequently asked questions</h2>
-        <p class="text-sm text-gray-600">
-          Have questions? We're here to help
+<section class="px-2 sm:px-4 py-12 lg:py-16">
+  <!--Header-->
+  <div class=" prose mx-auto not-prose lg:container mx-auto grid lg:grid-cols-2">
+    <div class="flex items-center lg:my-16">
+      <div class="md:max-w-[600px] grid gap-4">
+        <p class="text-sm font-semibold text-indigo-600">13 Jan 2022</p>
+        <h2 class="md:leading-snug font-semibold text-3xl md:text-4xl">Our top 10 Javascript frameworks to use</h2>
+        <p class="leading-relaxed text-sm text-gray-600 lg:w-4/5">
+          JavaScript frameworks make development easy with extensive features and functionalities.
         </p>
-
-
-        <!--Search box-->
-        <div class="relative w-60 mx-auto mt-5">
-          <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        <div class="lg:mt-4 flex items-center gap-2">
+          <img class="w-12 h-12 rounded-full" src="https://avatars.dicebear.com/api/adventurer/your-custom-seed.svg" alt="" srcset="">
+          <div class="text-sm">
+            <p class="font-semibold">Drew Cano</p>
+            <p class="text-gray-600">Frontend Engineer</p>
           </div>
-          <input type="text" id="search-icon"
-                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                 placeholder="Search">
         </div>
       </div>
-
-      <!--Faq list-->
-      <ul id="faq_list" class="divide-y mx-auto">
-        <li class="grid gap-3 py-5 active">
-          <div class="flex justify-between">
-            <p class="font-semibold">Is there a free trail available?</p>
-            <button class="text-gray-600">
-              <svg class="plus w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <svg class="minus w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            </button>
-          </div>
-          <p class="answer text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores dolor doloremque dolores, facere facilis ipsa labore laudantium magni molestiae neque nostrum obcaecati perspiciatis quasi sequi soluta vel voluptatem!</p>
-        </li>
-
-        <li class="grid gap-3 py-5">
-          <div class="flex justify-between">
-            <p class="font-semibold">Is there a free trail available?</p>
-            <button class="text-gray-600">
-              <svg class="plus w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <svg class="minus w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            </button>
-          </div>
-          <p class="answer text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores dolor doloremque dolores, facere facilis ipsa labore laudantium magni molestiae neque nostrum obcaecati perspiciatis quasi sequi soluta vel voluptatem!</p>
-        </li>
-
-        <li class="grid gap-3 py-5">
-          <div class="flex justify-between">
-            <p class="font-semibold">Is there a free trail available?</p>
-            <button class="text-gray-600">
-              <svg class="plus w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <svg class="minus w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            </button>
-          </div>
-          <p class="answer text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores dolor doloremque dolores, facere facilis ipsa labore laudantium magni molestiae neque nostrum obcaecati perspiciatis quasi sequi soluta vel voluptatem!</p>
-        </li>
-
-        <li class="grid gap-3 py-5">
-          <div class="flex justify-between">
-            <p class="font-semibold">Is there a free trail available?</p>
-            <button class="text-gray-600">
-              <svg class="plus w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <svg class="minus w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            </button>
-          </div>
-          <p class="answer text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores dolor doloremque dolores, facere facilis ipsa labore laudantium magni molestiae neque nostrum obcaecati perspiciatis quasi sequi soluta vel voluptatem!</p>
-        </li>
-
-        <li class="grid gap-3 py-5">
-          <div class="flex justify-between">
-            <p class="font-semibold">Is there a free trail available?</p>
-            <button class="text-gray-600">
-              <svg class="plus w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <svg class="minus w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            </button>
-          </div>
-          <p class="answer text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores dolor doloremque dolores, facere facilis ipsa labore laudantium magni molestiae neque nostrum obcaecati perspiciatis quasi sequi soluta vel voluptatem!</p>
-        </li>
-      </ul>
     </div>
-  </section>
-</main>
+
+    <div class="my-12 lg:my-0">
+      <img class="min-h-full object-cover" src="./img/nasa.jpg" alt="nasa">
+    </div>
+  </div>
+
+  <article class="prose mx-auto lg:mt-16">
+    <p>
+      For years parents have espoused the health benefits of eating garlic bread with cheese to their
+      children, with the food earning such an iconic status in our culture that kids will often dress
+      up as warm, cheesy loaf for Halloween.
+    </p>
+    <p>
+      But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+      springing up around the country.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet blanditiis, consequatur consequuntur distinctio eligendi facilis impedit labore magni nisi nobis non possimus quis, quos repudiandae sapiente sed totam voluptatibus!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet blanditiis, consequatur consequuntur distinctio eligendi facilis impedit labore magni nisi nobis non possimus quis, quos repudiandae sapiente sed totam voluptatibus!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet blanditiis, consequatur consequuntur distinctio eligendi facilis impedit labore magni nisi nobis non possimus quis, quos repudiandae sapiente sed totam voluptatibus!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet blanditiis, consequatur consequuntur distinctio eligendi facilis impedit labore magni nisi nobis non possimus quis, quos repudiandae sapiente sed totam voluptatibus!</p>
+  </article>
+</section>
 
 
 <footer class="px-4 py-8 sm:px-6 sm:py-10 bg-gray-50">
